@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101511">
+
+  <title>The Ancient Library — Knowledge Beyond Time</title>
+
+  <meta name="description"
+    content="Explore ancient writings, forgotten civilizations, philosophy, fantasy and timeless fiction in a digital library built for curious minds.">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <a class="logo" href="#home">
+      <span class="logo-icon">✧</span>
+      <span>THE ANCIENT LIBRARY</span>
+    </a>
+
+    <nav class="navigation" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#ancient">Ancient Texts</a>
+      <a href="#knowledge">Knowledge</a>
+      <a href="#fiction">Fiction</a>
+    </nav>
+
+    <a class="header-link" href="#library">Explore Library ↗</a>
+  </header>
+
+  <main>
+
+    <!-- Hero section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">A LIBRARY WITHOUT BOUNDARIES</p>
+
+        <h1>
+          Some stories<br>
+          are older than <em>history.</em>
+        </h1>
+
+        <p class="hero-description">
+          Enter a world of ancient manuscripts, forgotten wisdom,
+          lost civilizations and extraordinary stories.
+          Knowledge has no end. Neither does imagination.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-gold" href="#library">
+            Explore the Library →
+          </a>
+
+          <a class="button button-outline" href="#ancient">
+            Discover Ancient Texts
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span class="status-dot"></span>
+          HISTORY · WISDOM · IMAGINATION
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Illustration of an ancient library">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+
+        <div class="art-symbol">✧</div>
+
+        <div class="art-caption">
+          <span>THE SEARCH FOR KNOWLEDGE</span>
+          <span>BEGINS HERE</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search -->
+    <section class="search-section" id="library">
+      <div>
+        <p class="eyebrow">YOUR NEXT DISCOVERY</p>
+        <h2>What will you uncover?</h2>
+      </div>
+
+      <form class="search-form" id="search-form" role="search">
+        <label class="visually-hidden" for="book-search">
+          Search books and subjects
+        </label>
+
+        <input
+          type="search"
+          id="book-search"
+          placeholder="Search titles, authors or subjects..."
+          autocomplete="off"
+        >
+
+        <button type="submit" aria-label="Search library">
+          Search
+        </button>
+      </form>
+    </section>
+
+    <!-- Category navigation -->
+    <section class="categories" aria-label="Library categories">
+      <a class="category-chip active" href="#ancient">✧ Ancient Texts</a>
+      <a class="category-chip" href="#knowledge">◈ Philosophy & Wisdom</a>
+      <a class="category-chip" href="#fiction">❖ Fantasy & Fiction</a>
+      <a class="category-chip" href="#romance">♡ Romance</a>
+    </section>
+
+    <!-- Featured ancient texts -->
+    <section class="book-section" id="ancient">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">FROM THE ANCIENT WORLD</p>
+          <h2>Echoes of Antiquity</h2>
+          <p class="section-description">
+            Explore writings that have shaped human history,
+            spiritual traditions and our understanding of the world.
+          </p>
+        </div>
+
+        <span class="section-number">01 / ANCIENT TEXTS</span>
+      </div>
+
+      <div class="book-grid">
+
+        <article class="book-card"
+          data-title="The Egyptian Book of the Dead"
+          data-author="Ancient Egyptian scribes"
+          data-category="ancient"
+          data-description="A collection of ancient Egyptian funerary spells, prayers and instructions intended to guide the deceased through the afterlife. The surviving manuscripts vary in content and arrangement.">
+
+          <div class="book-cover cover-egypt">
+            <span class="cover-label">ANCIENT EGYPT</span>
+            <span class="cover-symbol">☥</span>
+            <h3>THE BOOK<br>OF THE DEAD</h3>
+            <span class="cover-footer">THE JOURNEY BEYOND</span>
+          </div>
+
+          <div class="book-info">
+            <span class="book-category">ANCIENT TEXT</span>
+            <h3>The Egyptian Book of the Dead</h3>
+            <p>Ancient Egyptian funerary tradition</p>
+            <button class="read-button" type="button"
+              data-open-book>Discover this text ↗</button>
+          </div>
+        </article>
+
+        <article class="book-card"
+          data-title="The Book of Enoch"
+          data-author="Ancient Jewish apocalyptic tradition"
+          data-category="ancient"
+          data-description="An ancient Jewish religious work associated with Enoch, exploring heavenly visions, rebellious angels, judgment and the structure of the cosmos. Its different sections developed over time.">
+
+          <div class="book-cover cover-enoch">
+            <span class="cover-label">ANCIENT WRITINGS</span>
+            <span class="cover-symbol">✧</span>
+            <h3>THE BOOK<br>OF ENOCH</h3>
+            <span class="cover-footer">VISIONS OF HEAVEN</span>
+          </div>
+
+          <div class="book-info">
+            <span class="book-category">ANCIENT TEXT</span>
+            <h3>The Book of Enoch</h3>
+            <p>Ancient Jewish apocalyptic literature</p>
+            <button class="read-button" type="button"
+              data-open-book>Discover this text ↗</button>
+          </div>
+        </article>
+
+        <article class="book-card"
+          data-title="The Epic of Gilgamesh"
+          data-author="Ancient Mesopotamian scribes"
+          data-category="ancient"
+          data-description="One of the world's oldest surviving literary traditions. Follow Gilgamesh, king of Uruk, through friendship, loss, heroic adventures and a search for immortality.">
+
+          <div class="book-cover cover-gilgamesh">
+            <span class="cover-label">MESOPOTAMIA</span>
+            <span class="cover-symbol">𒀭</span>
+            <h3>THE EPIC OF<br>GILGAMESH</h3>
+            <span class="cover-footer">THE QUEST FOR ETERNITY</span>
+          </div>
+
+          <div class="book-info">
+            <span class="book-category">ANCIENT EPIC</span>
+            <h3>The Epic of Gilgamesh</h3>
+            <p>Ancient Mesopotamian literature</p>
+            <button class="read-button" type="button"
+              data-open-book>Discover this text ↗</button>
+          </div>
+        </article>
+
+        <article class="book-card"
+          data-title="The Republic"
+          data-author="Plato"
+          data-category="knowledge"
+          data-description="A philosophical dialogue by Plato examining justice, education, political life and the nature of a well-ordered society.">
+
+          <div class="book-cover cover-republic">
+            <span class="cover-label">ANCIENT GREECE</span>
+            <span class="cover-symbol">Ω</span>
+            <h3>THE<br>REPUBLIC</h3>
+            <span class="cover-footer">PLATO</span>
+          </div>
+
+          <div class="book-info">
+            <span class="book-category">PHILOSOPHY</span>
+            <h3>The Republic</h3>
+            <p>Plato</p>
+            <button class="read-button" type="button"
+              data-open-book>Discover this text ↗</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Knowledge -->
+    <section class="knowledge-section" id="knowledge">
+      <div class="knowledge-intro">
+        <p class="eyebrow">GO BEYOND THE PAGES</p>
+        <h2>Knowledge is a journey.</h2>
+        <p>
+          Every ancient text has a story behind it. Learn about the
+          people who created these works, the worlds they lived in,
+          and the ideas that survived across centuries.
+        </p>
+      </div>
+
+      <div class="knowledge-grid">
+        <article class="knowledge-card">
+          <span class="knowledge-icon">⌘</span>
+          <h3>Lost Civilizations</h3>
+          <p>Discover Egypt, Mesopotamia, Greece and other ancient worlds.</p>
+        </article>
+
+        <article class="knowledge-card">
+          <span class="knowledge-icon">✧</span>
+          <h3>Mythology & Beliefs</h3>
+          <p>Explore creation stories, deities, legends and spiritual traditions.</p>
+        </article>
+
+        <article class="knowledge-card">
+          <span class="knowledge-icon">◈</span>
+          <h3>Philosophy & Wisdom</h3>
+          <p>Question reality, justice, human nature and the meaning of life.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Fiction -->
+    <section class="book-section" id="fiction">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">WORLDS BEYOND OUR OWN</p>
+          <h2>Enter another world.</h2>
+          <p class="section-description">
+            From magical kingdoms and dark mysteries to unforgettable classics.
+          </p>
+        </div>
+
+        <span class="section-number">02 / FICTION</span>
+      </div>
+
+      <div class="book-grid">
+
+        <article class="book-card"
+          data-title="Frankenstein"
+          data-author="Mary Shelley"
+          data-category="fiction"
+          data-description="Mary Shelley's landmark Gothic novel explores scientific ambition, responsibility, loneliness and what it means to be human.">
+
+          <div class="book-cover cover-frankenstein">
+            <span class="cover-label">GOTHIC CLASSIC</span>
+            <span class="cover-symbol">☾</span>
+            <h3>FRANKENSTEIN</h3>
+            <span class="cover-footer">MARY SHELLEY</span>
+          </div>
+
+          <div class="book-info">
+            <span class="book-category">GOTHIC FICTION</span>
+            <h3>Frankenstein</h3>
+            <p>Mary Shelley</p>
+            <button class="read-button" type="button"
+              data-open-book>Discover this book ↗</button>
+          </div>
+        </article>
+
+        <article class="book-card"
+          data-title="Dracula"
+          data-author="Bram Stoker"
+          data-category="fiction"
+          data-description="A Gothic horror novel told through journals and letters, following the terrifying influence of Count Dracula.">
+
+          <div class="book-cover cover-dracula">
+            <span class="cover-label">GOTHIC HORROR</span>
+            <span class="cover-symbol">☽</span>
+            <h3>DRACULA</h3>
+            <span class="cover-footer">BRAM STOKER</span>
+          </div>
+
+          <div class="book-info">
+            <span class="book-category">HORROR</span>
+            <h3>Dracula</h3>
+            <p>Bram Stoker</p>
+            <button class="read-button" type="button"
+              data-open-book>Discover this book ↗</button>
+          </div>
+        </article>
+
+        <article class="book-card"
+          data-title="Alice's Adventures in Wonderland"
+          data-author="Lewis Carroll"
+          data-category="fiction"
+          data-description="A curious girl falls into a strange world filled with unusual characters, playful logic and unforgettable adventures.">
+
+          <div class="book-cover cover-alice">
+            <span class="cover-label">A CLASSIC ADVENTURE</span>
+            <span class="cover-symbol">♧</span>
+            <h3>ALICE IN<br>WONDERLAND</h3>
+            <span class="cover-footer">LEWIS CARROLL</span>
+          </div>
+
+          <div class="book-info">
+            <span class="book-category">FANTASY</span>
+            <h3>Alice's Adventures in Wonderland</h3>
+            <p>Lewis Carroll</p>
+            <button class="read-button" type="button"
+              data-open-book>Discover this book ↗</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Romance -->
+    <section class="romance-section" id="romance">
+      <div>
+        <p class="eyebrow">FOR THE ROMANTICS</p>
+        <h2>Love has a thousand stories.</h2>
+        <p>
+          Discover classic love stories, historical romance and
+          unforgettable fictional relationships.
+        </p>
+      </div>
+
+      <a class="button button-gold" href="#library">
+        Explore the collection →
+      </a>
+    </section>
+
+    <!-- Book details and reader -->
+    <dialog class="book-dialog" id="book-dialog">
+      <button class="dialog-close" type="button"
+        aria-label="Close book details">✕</button>
+
+      <p class="eyebrow" id="dialog-category">LIBRARY COLLECTION</p>
+      <h2 id="dialog-title">Book title</h2>
+      <p id="dialog-author"></p>
+      <p id="dialog-description"></p>
+
+      <p class="reader-notice">
+        Full reading editions will be added to this library as
+        verified, legally available texts.
+      </p>
+
+      <button class="button button-gold" id="dialog-close-button"
+        type="button">Return to library</button>
+    </dialog>
+
+    <p class="empty-state" id="empty-state" hidden>
+      No books found. Try another title or subject.
+    </p>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <a class="logo" href="#home">
+      <span class="logo-icon">✧</span>
+      <span>THE ANCIENT LIBRARY</span>
+    </a>
+
+    <p>A home for ancient wisdom and timeless stories.</p>
+    <p class="copyright">
+      © 2026 The Ancient Library · Built for curious minds.
+    </p>
+  </footer>
+
+</body>
+</html>
